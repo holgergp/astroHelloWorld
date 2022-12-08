@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import MyReactComponent from '../components/ReactComponent.jsx'
+import MySolidComponent from '../components/SolidComponent.jsx'
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<h1>Hello!</h1>
+        <MyReactComponent />
+        <MySolidComponent client:load />
+
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+	}
+
+</style>
