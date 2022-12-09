@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import MyAstroComponent from '../components/AstroComponent.astro'
 import MyReactComponent from '../components/ReactComponent.jsx'
 import MySolidComponent from '../components/SolidComponent.jsx'
 ---
@@ -8,9 +8,9 @@ import MySolidComponent from '../components/SolidComponent.jsx'
 <Layout title="Welcome to Astro.">
 	<main>
 		<h1>Hello!</h1>
+        <MyAstroComponent title={"Hello from Astro"}/>
         <MyReactComponent />
         <MySolidComponent client:load />
-
 	</main>
 </Layout>
 
